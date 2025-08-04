@@ -4,7 +4,7 @@
 
 
 🔗 **作品展示（點我使用）**：  
-👉 [https://iiijen.github.io/Weather-App//](https://iiijen.github.io/Weather-App/)
+👉 [https://iiijen.github.io/Weather-App/](https://iiijen.github.io/Weather-App/)
 
 ---
 
