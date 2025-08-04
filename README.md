@@ -2,8 +2,9 @@
 
 這是一個天氣查詢的迷你網頁，使用 **HTML、CSS 和 JavaScript** 製作，透過 **OpenWeatherMap API** 查詢各城市即時天氣資訊，包含溫度、濕度、風速與天氣狀態圖示。
 
-<!-- 作品展示（連結建立後再補上） -->
-<!-- 🔗 [作品展示（點我使用）](https://你的帳號.github.io/Weather-App/) -->
+
+🔗 [作品展示（點我使用）](https://iiijen.github.io/Weather-App/
+) -->
 
 ---
 
