@@ -1,6 +1,14 @@
 document.getElementById('searchBtn').addEventListener('click', () => {
     const city = document.querySelector('.search-area input').value.trim();
 
+    
+    document.querySelector('.search-area input').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            document.getElementById('searchBtn').click();
+        }
+    });
+
+
     if (!city) {
         alert('請輸入城市名稱');
         return;
@@ -25,7 +33,7 @@ document.getElementById('searchBtn').addEventListener('click', () => {
             weatherIcon.onerror = () => {
                 weatherIcon.src = './images/default.png';
             };
-            
+
             const iconName = data.weather[0].main.toLowerCase();
             console.log('切換圖片為：', iconName);
             weatherIcon.src = `./images/${iconName}.png`;
