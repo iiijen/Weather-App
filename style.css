@@ -1,3 +1,11 @@
+:root{
+  --secondary: #E5DDC5;
+  --background: #F1EEDC;
+  --surface: #B3C8CF;
+  --accent: #D9B8A8;
+  --text: #47505A;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +15,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0d0d0d, #000000);
+    background: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +27,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     padding: 30px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--surface);
     box-shadow: 0 0px 32px rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -34,6 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     gap: 15px;
 }
 
@@ -43,12 +52,12 @@ body {
     border-radius: 30px;
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text);
 }
 
 .search-area input::placeholder {
-    color: #fff;
+    color: var(--text);
     opacity: 1;
 }
 
@@ -58,18 +67,18 @@ body {
     border-radius: 50%;
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
 .search-area button:hover{
     scale: 1.1;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--accent);
 }
 
 button i {
     font-size: 15px;
-    color: #fff;
+    color: var(--text);
 }
 
 .weather-area{
@@ -83,6 +92,7 @@ button i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     padding: 10px;
     gap: 8px;
 }
@@ -94,13 +104,13 @@ button i {
 
 #temp{
     margin-top: 0px;
-    color: #fff;
+    color: var(--text);
     font-size: 2.5rem;
 }
 
 #city{
-    color: #fff;
-    font-size: 2.5rem;
+    color: var(--text);
+    font-size: 2rem;
 }
 
 .details{
@@ -108,7 +118,7 @@ button i {
     justify-content: center;
     margin-top: 30px;
     width: 100%;
-    color: #fff;
+    color: var(--text);
     font-size: 1.5rem;
     gap: 50px;
 }
@@ -120,8 +130,9 @@ button i {
 }
 
 .detail-item img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  filter: opacity(0.6);
 }
 
 .detail-item .text {
